@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets - Showcase Technique | Jules Portfolio Pro</title>
+    <meta name="description" content="Découvrez les projets techniques de Jules : Vote Track, solutions IoT avec Raspberry Pi, applications full-stack et analyses de données. Études de cas détaillées avec démos en direct." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fjulesport7867back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">J</span>
+                    </div>
+                    <span class="text-xl font-bold text-primary">Jules Portfolio</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_professional_developer_portfolio.html" class="text-text-secondary hover:text-primary transition-colors">Accueil</a>
+                    <a href="about_academic_professional_journey.html" class="text-text-secondary hover:text-primary transition-colors">À Propos</a>
+                    <a href="projects_technical_portfolio_showcase.html" class="text-primary font-semibold border-b-2 border-secondary">Projets</a>
+                    <a href="skills_expertise_technical_competency_matrix.html" class="text-text-secondary hover:text-primary transition-colors">Compétences</a>
+                    <a href="experience_academic_professional_timeline.html" class="text-text-secondary hover:text-primary transition-colors">Expérience</a>
+                    <a href="certifications_professional_validation_gallery.html" class="text-text-secondary hover:text-primary transition-colors">Certifications</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="homepage_professional_developer_portfolio.html" class="text-text-secondary hover:text-primary transition-colors py-2">Accueil</a>
+                    <a href="about_academic_professional_journey.html" class="text-text-secondary hover:text-primary transition-colors py-2">À Propos</a>
+                    <a href="projects_technical_portfolio_showcase.html" class="text-primary font-semibold py-2">Projets</a>
+                    <a href="skills_expertise_technical_competency_matrix.html" class="text-text-secondary hover:text-primary transition-colors py-2">Compétences</a>
+                    <a href="experience_academic_professional_timeline.html" class="text-text-secondary hover:text-primary transition-colors py-2">Expérience</a>
+                    <a href="certifications_professional_validation_gallery.html" class="text-text-secondary hover:text-primary transition-colors py-2">Certifications</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-32 h-32 bg-secondary rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-40 h-40 bg-primary rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-accent rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container-custom relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+                    Portfolio <span class="text-gradient">Technique</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Découvrez mes réalisations techniques qui transforment des idées innovantes en solutions concrètes. 
+                    De l'IoT aux applications web full-stack, chaque projet raconte une histoire de résolution de problèmes.
+                </p>
+                
+                <!-- Project Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-secondary mb-2">15+</div>
+                        <div class="text-text-secondary">Projets Complétés</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">5</div>
+                        <div class="text-text-secondary">Technologies Maîtrisées</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary mb-2">3</div>
+                        <div class="text-text-secondary">Projets Open Source</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-secondary mb-2">1</div>
+                        <div class="text-text-secondary">Collaboration Professionnelle</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-primary mb-2">Filtrer les Projets</h2>
+                    <p class="text-text-secondary">Explorez mes projets par technologie ou type</p>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-3 mt-6 md:mt-0">
+                    <button class="filter-btn active" data-filter="all">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                        Tous les Projets
+                    </button>
+                    <button class="filter-btn" data-filter="web">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+                        </svg>
+                        Applications Web
+                    </button>
+                    <button class="filter-btn" data-filter="iot">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                        </svg>
+                        IoT & Hardware
+                    </button>
+                    <button class="filter-btn" data-filter="data">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 00-2 2z"/>
+                        </svg>
+                        Analyse de Données
+                    </button>
+                    <button class="filter-btn" data-filter="python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-4 h-4 mr-2" />
+                        Python
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project - Vote Track -->
+    <section class="section-padding bg-gradient-to-r from-primary to-primary-800 text-white">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Project Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="bg-secondary px-3 py-1 rounded-full text-sm font-semibold mr-3">Projet Phare</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">MiabeInnovation</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Vote Track</h2>
+                    <p class="text-lg text-primary-100 mb-6">
+                        Système de vote électronique sécurisé développé en collaboration avec MiabeInnovation. 
+                        Une solution complète qui révolutionne les processus démocratiques avec une interface 
+                        intuitive et une architecture backend robuste.
+                    </p>
+                    
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <div class="text-2xl font-bold text-secondary">99.9%</div>
+                            <div class="text-primary-200">Fiabilité du Système</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-accent">500+</div>
+                            <div class="text-primary-200">Votes Traités/Min</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-secondary">3</div>
+                            <div class="text-primary-200">Mois de Développement</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-accent">5</div>
+                            <div class="text-primary-200">Développeurs Impliqués</div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold mb-4">Technologies Utilisées</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-lg text-sm">React</span>
+                            <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-lg text-sm">Node.js</span>
+                            <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-lg text-sm">MongoDB</span>
+                            <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-lg text-sm">Express.js</span>
+                            <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-lg text-sm">JWT Auth</span>
+                            <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-lg text-sm">Socket.io</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="openProjectModal('vote-track')" class="bg-secondary hover:bg-secondary-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                            Voir l'Étude de Cas
+                        </button>
+                        <a href="javascript:void(0)" class="border-2 border-white text-white hover:bg-white hover:text-primary px-6 py-3 rounded-lg font-semibold transition-colors text-center">
+                            <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Code Source
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Visual -->
+                <div class="relative">
+                    <div class="relative z-10">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Vote Track Interface" class="w-full rounded-lg shadow-professional" onerror="this.src='https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1000'; this.onerror=null;" />
+                    </div>
+                    <!-- Floating Elements -->
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-secondary rounded-full flex items-center justify-center animate-bounce">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-accent rounded-full flex items-center justify-center animate-bounce" style="animation-delay: 1s;">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Tous les Projets</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Une collection diversifiée de projets démontrant ma polyvalence technique et ma capacité d'innovation.
+                </p>
+            </div>
+
+            <!-- Projects Masonry Grid -->
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- IoT Sensor Dashboard -->
+                <div class="project-card card group hover:scale-105 transition-all duration-300 overflow-hidden" data-category="iot python">
+                    <div class="relative h-48 mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Tableau de bord IoT" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pixabay.com/photo/2020/02/03/00/12/circuit-4815672_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-accent text-white px-2 py-1 rounded text-xs font-semibold">IoT</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Raspberry Pi</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Python</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Tableau de Bord IoT</h3>
+                    <p class="text-text-secondary mb-4">
+                        Dashboard en temps réel pour la surveillance de capteurs IoT avec Raspberry Pi. 
+                        Visualisation des données environnementales et alertes automatisées.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <button onclick="openProjectModal('iot-dashboard')" class="text-secondary hover:text-secondary-600 font-semibold">
+                            Voir le projet →
+                        </button>
+                        <div class="flex space-x-2">
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M7 7l10 10M17 7v4m0 0h-4"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Commerce Platform -->
+                <div class="project-card card group hover:scale-105 transition-all duration-300 overflow-hidden" data-category="web">
+                    <div class="relative h-48 mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Plateforme E-Commerce" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1000'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-secondary text-white px-2 py-1 rounded text-xs font-semibold">Web App</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">React</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Express</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Plateforme E-Commerce</h3>
+                    <p class="text-text-secondary mb-4">
+                        Application web complète avec authentification, gestion des commandes et paiements sécurisés. 
+                        Architecture moderne et interface utilisateur optimisée.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <button onclick="openProjectModal('ecommerce-platform')" class="text-secondary hover:text-secondary-600 font-semibold">
+                            Voir le projet →
+                        </button>
+                        <div class="flex space-x-2">
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M7 7l10 10M17 7v4m0 0h-4"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis Tool -->
+                <div class="project-card card group hover:scale-105 transition-all duration-300 overflow-hidden" data-category="data python">
+                    <div class="relative h-48 mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Outil d'Analyse de Données" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs font-semibold">Data Science</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Python</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Pandas</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Analyseur de Données Financières</h3>
+                    <p class="text-text-secondary mb-4">
+                        Outil d'analyse avancée pour les données financières avec visualisations interactives 
+                        et modèles prédictifs. Interface web pour l'exploration de données.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <button onclick="openProjectModal('data-analyzer')" class="text-secondary hover:text-secondary-600 font-semibold">
+                            Voir le projet →
+                        </button>
+                        <div class="flex space-x-2">
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M7 7l10 10M17 7v4m0 0h-4"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Home Controller -->
+                <div class="project-card card group hover:scale-105 transition-all duration-300 overflow-hidden" data-category="iot python">
+                    <div class="relative h-48 mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Contrôleur Maison Intelligente" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1000'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-accent text-white px-2 py-1 rounded text-xs font-semibold">IoT</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Raspberry Pi</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Python</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">MQTT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Contrôleur Maison Intelligente</h3>
+                    <p class="text-text-secondary mb-4">
+                        Système de domotique complet avec contrôle d'éclairage, température et sécurité. 
+                        Interface mobile et web pour la gestion à distance.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <button onclick="openProjectModal('smart-home')" class="text-secondary hover:text-secondary-600 font-semibold">
+                            Voir le projet →
+                        </button>
+                        <div class="flex space-x-2">
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M7 7l10 10M17 7v4m0 0h-4"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Management App -->
+                <div class="project-card card group hover:scale-105 transition-all duration-300 overflow-hidden" data-category="web">
+                    <div class="relative h-48 mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Application de Gestion de Tâches" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1000'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-secondary text-white px-2 py-1 rounded text-xs font-semibold">Web App</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Vue.js</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Node.js</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">TaskFlow Pro</h3>
+                    <p class="text-text-secondary mb-4">
+                        Application de gestion de tâches collaborative avec fonctionnalités avancées de suivi, 
+                        notifications en temps réel et intégration calendrier.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <button onclick="openProjectModal('taskflow')" class="text-secondary hover:text-secondary-600 font-semibold">
+                            Voir le projet →
+                        </button>
+                        <div class="flex space-x-2">
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M7 7l10 10M17 7v4m0 0h-4"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather Station -->
+                <div class="project-card card group hover:scale-105 transition-all duration-300 overflow-hidden" data-category="iot python">
+                    <div class="relative h-48 mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Station Météo Connectée" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pixabay.com/photo/2016/05/24/13/29/clouds-1413081_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-accent text-white px-2 py-1 rounded text-xs font-semibold">IoT</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Raspberry Pi</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">Python</span>
+                                <span class="bg-white/20 backdrop-blur-sm px-2 py-1 rounded text-xs">API REST</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Station Météo Connectée</h3>
+                    <p class="text-text-secondary mb-4">
+                        Station météorologique autonome avec capteurs multiples, transmission de données 
+                        en temps réel et prédictions météorologiques locales.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <button onclick="openProjectModal('weather-station')" class="text-secondary hover:text-secondary-600 font-semibold">
+                            Voir le projet →
+                        </button>
+                        <div class="flex space-x-2">
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="text-text-secondary hover:text-primary">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M7 7l10 10M17 7v4m0 0h-4"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="btn-secondary">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    Charger Plus de Projets
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section-padding bg-gradient-to-r from-secondary to-secondary-600 text-white">
+        <div class="container-custom text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Intéressé par une Collaboration ?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                Chaque projet représente une opportunité d'apprentissage et d'innovation. 
+                Discutons de votre prochain défi technique et explorons comment nous pouvons créer quelque chose d'exceptionnel ensemble.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="about_academic_professional_journey.html" class="bg-white text-secondary px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                    En Savoir Plus Sur Moi
+                </a>
+                <a href="javascript:void(0)" onclick="openContact()" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-secondary transition-colors">
+                    Démarrer un Projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">J</span>
+                        </div>
+                        <span class="text-xl font-bold">Jules Portfolio</span>
+                    </div>
+                    <p class="text-primary-300 mb-4">
+                        Développeur Full-Stack passionné par l'innovation IoT et les solutions technologiques qui comptent.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation Rapide</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage_professional_developer_portfolio.html" class="text-primary-300 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="about_academic_professional_journey.html" class="text-primary-300 hover:text-white transition-colors">À Propos</a></li>
+                        <li><a href="skills_expertise_technical_competency_matrix.html" class="text-primary-300 hover:text-white transition-colors">Compétences</a></li>
+                        <li><a href="experience_academic_professional_timeline.html" class="text-primary-300 hover:text-white transition-colors">Expérience</a></li>
+                        <li><a href="certifications_professional_validation_gallery.html" class="text-primary-300 hover:text-white transition-colors">Certifications</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-primary-300">
+                        <p class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            jules.dev@email.com
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            France
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                            IpNet Institute of Technology
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-800 pt-8 text-center text-primary-300">
+                <p>&copy; 2025 Jules Portfolio Pro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg shadow-professional max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b border-border p-6 flex justify-between items-center">
+                    <h3 id="modal-title" class="text-2xl font-bold text-primary"></h3>
+                    <button onclick="closeProjectModal()" class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="modal-content" class="p-6">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fade-in');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Project Modal Functions
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('project-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalContent = document.getElementById('modal-content');
+
+            // Project data
+            const projects = {
+                'vote-track': {
+                    title: 'Vote Track - Système de Vote Électronique',
+                    content: `
+                        <div class="space-y-8">
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
+                                         alt="Vote Track Interface" 
+                                         class="w-full rounded-lg shadow-card"
+                                         onerror="this.src='https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1000'; this.onerror=null;">
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-primary mb-4">Défi</h4>
+                                    <p class="text-text-secondary mb-6">
+                                        Développer un système de vote électronique sécurisé et transparent pour MiabeInnovation, 
+                                        capable de gérer des élections démocratiques avec une interface intuitive et des mesures 
+                                        de sécurité robustes.
+                                    </p>
+                                    
+                                    <h4 class="text-xl font-semibold text-primary mb-4">Solution</h4>
+                                    <p class="text-text-secondary mb-6">
+                                        Architecture full-stack avec authentification JWT, chiffrement des votes, 
+                                        interface React responsive et API REST sécurisée. Implémentation de Socket.io 
+                                        pour les mises à jour en temps réel.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div class="card text-center">
+                                    <div class="text-3xl font-bold text-secondary mb-2">99.9%</div>
+                                    <div class="text-text-secondary">Fiabilité</div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="text-3xl font-bold text-accent mb-2">500+</div>
+                                    <div class="text-text-secondary">Votes/Min</div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="text-3xl font-bold text-primary mb-2">3</div>
+                                    <div class="text-text-secondary">Mois Dev</div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary mb-4">Technologies Utilisées</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="bg-primary-100 text-primary px-3 py-1 rounded-lg">React</span>
+                                    <span class="bg-primary-100 text-primary px-3 py-1 rounded-lg">Node.js</span>
+                                    <span class="bg-primary-100 text-primary px-3 py-1 rounded-lg">MongoDB</span>
+                                    <span class="bg-primary-100 text-primary px-3 py-1 rounded-lg">Express.js</span>
+                                    <span class="bg-primary-100 text-primary px-3 py-1 rounded-lg">JWT</span>
+                                    <span class="bg-primary-100 text-primary px-3 py-1 rounded-lg">Socket.io</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary mb-4">Fonctionnalités Clés</h4>
+                                <ul class="grid md:grid-cols-2 gap-3">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Authentification sécurisée
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Chiffrement des votes
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Interface responsive
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Résultats en temps réel
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Audit trail complet
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Dashboard administrateur
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary mb-4">Leçons Apprises</h4>
+                                <p class="text-text-secondary">
+                                    Ce projet m'a permis d'approfondir mes connaissances en sécurité web, 
+                                    gestion d'état complexe avec React, et architecture scalable. 
+                                    J'ai également développé mes compétences en collaboration d'équipe 
+                                    et gestion de projet agile.
+                                </p>
+                            </div>
+                        </div>
+                    `
+                },
+                'iot-dashboard': {
+                    title: 'Tableau de Bord IoT - Surveillance Environnementale',
+                    content: `
+                        <div class="space-y-8">
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
+                                         alt="Dashboard IoT" 
+                                         class="w-full rounded-lg shadow-card"
+                                         onerror="this.src='https://images.pixabay.com/photo/2020/02/03/00/12/circuit-4815672_1280.jpg'; this.onerror=null;">
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-primary mb-4">Défi</h4>
+                                    <p class="text-text-secondary mb-6">
+                                        Créer un système de surveillance environnementale en temps réel 
+                                        utilisant Raspberry Pi et capteurs multiples pour collecter, 
+                                        traiter et visualiser les données environnementales.
+                                    </p>
+                                    
+                                    <h4 class="text-xl font-semibold text-primary mb-4">Solution</h4>
+                                    <p class="text-text-secondary mb-6">
+                                        Dashboard web avec Flask, intégration de capteurs DHT22, 
+                                        BMP280 et MQ-2, base de données SQLite pour l'historique, 
+                                        et visualisations interactives avec Chart.js.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-4 gap-4">
+                                <div class="card text-center">
+                                    <div class="text-2xl font-bold text-secondary mb-2">5</div>
+                                    <div class="text-text-secondary">Capteurs</div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="text-2xl font-bold text-accent mb-2">24/7</div>
+                                    <div class="text-text-secondary">Surveillance</div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">1s</div>
+                                    <div class="text-text-secondary">Fréquence</div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="text-2xl font-bold text-secondary mb-2">95%</div>
+                                    <div class="text-text-secondary">Précision</div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary mb-4">Architecture Technique</h4>
+                                <div class="bg-surface p-6 rounded-lg">
+                                    <div class="grid md:grid-cols-3 gap-6">
+                                        <div class="text-center">
+                                            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                                                </svg>
+                                            </div>
+                                            <h5 class="font-semibold text-primary mb-2">Capteurs</h5>
+                                            <p class="text-sm text-text-secondary">DHT22, BMP280, MQ-2</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
+                                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                                                </svg>
+                                            </div>
+                                            <h5 class="font-semibold text-primary mb-2">Raspberry Pi</h5>
+                                            <p class="text-sm text-text-secondary">Traitement & Communication</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 00-2 2z"></path>
+                                                </svg>
+                                            </div>
+                                            <h5 class="font-semibold text-primary mb-2">Dashboard Web</h5>
+                                            <p class="text-sm text-text-secondary">Flask & Chart.js</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `
+                }
+                // Add more projects as needed
+            };
+
+            const project = projects[projectId];
+            if (project) {
+                modalTitle.textContent = project.title;
+                modalContent.innerHTML = project.content;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('project-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeProjectModal();
+            }
+        });
+
+        // Load more functionality
+        document.getElementById('load-more-btn').addEventListener('click', function() {
+            // Simulate loading more projects
+            this.innerHTML = '<svg class="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>Chargement...';
+            
+            setTimeout(() => {
+                this.innerHTML = '<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Tous les projets chargés';
+                this.disabled = true;
+                this.classList.add('opacity-50', 'cursor-not-allowed');
+            }, 2000);
+        });
+
+        // Contact function
+        function openContact() {
+            alert('Fonctionnalité de contact à venir. Email: jules.dev@email.com');
+        }
+
+        // Filter button styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .filter-btn {
+                @apply bg-white border border-border text-text-secondary px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:border-secondary hover:text-secondary flex items-center;
+            }
+            .filter-btn.active {
+                @apply bg-secondary text-white border-secondary;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
