@@ -10,38 +10,48 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
     <script type="module"
         src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fjulesport7867back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 
-<body class="bg-background text-text-primary">
+<body style="background: var(--bg-dark); color: var(--text-primary); font-family: var(--font-primary);">
     <!-- Navigation Header -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+    <nav class="fixed top-0 left-0 right-0 z-50" style="background: rgba(11, 15, 26, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-dark);">
         <div class="container-custom">
             <div class="flex items-center justify-between py-4">
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">J</span>
+                    <div class="logo-letter">
+                        <span>J</span>
                     </div>
-                    <span class="text-xl font-bold text-primary">Jules Portfolio</span>
+                    <span class="text-xl font-bold text-gradient">Jules Portfolio</span>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="homepage_professional_developer_portfolio.html"
-                        class="text-primary font-semibold border-b-2 border-secondary">Accueil</a>
+                        style="color: var(--color-primary-light); font-weight: 600; transition: var(--transition-fast);">Accueil</a>
                     <a href="about_academic_professional_journey.html"
-                        class="text-text-secondary hover:text-primary transition-colors">À Propos</a>
+                        style="color: var(--text-secondary); transition: var(--transition-fast);"
+                        onmouseover="this.style.color='var(--color-primary-light)'"
+                        onmouseout="this.style.color='var(--text-secondary)'">À Propos</a>
                     <a href="projects_technical_portfolio_showcase.html"
-                        class="text-text-secondary hover:text-primary transition-colors">Projets</a>
+                        style="color: var(--text-secondary); transition: var(--transition-fast);"
+                        onmouseover="this.style.color='var(--color-primary-light)'"
+                        onmouseout="this.style.color='var(--text-secondary)'">Projets</a>
                     <a href="skills_expertise_technical_competency_matrix.html"
-                        class="text-text-secondary hover:text-primary transition-colors">Compétences</a>
+                        style="color: var(--text-secondary); transition: var(--transition-fast);"
+                        onmouseover="this.style.color='var(--color-primary-light)'"
+                        onmouseout="this.style.color='var(--text-secondary)'">Compétences</a>
                     <a href="experience_academic_professional_timeline.html"
-                        class="text-text-secondary hover:text-primary transition-colors">Expérience</a>
+                        style="color: var(--text-secondary); transition: var(--transition-fast);"
+                        onmouseover="this.style.color='var(--color-primary-light)'"
+                        onmouseout="this.style.color='var(--text-secondary)'">Expérience</a>
                     <a href="certifications_professional_validation_gallery.html"
-                        class="text-text-secondary hover:text-primary transition-colors">Certifications</a>
+                        style="color: var(--text-secondary); transition: var(--transition-fast);"
+                        onmouseover="this.style.color='var(--color-primary-light)'"
+                        onmouseout="this.style.color='var(--text-secondary)'">Certifications</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -75,19 +85,10 @@
 
     <!-- Hero Section -->
     <section
-        class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 to-secondary-50">
-        <!-- Animated Background Particles -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-60 animate-pulse"
-                style="top: 20%; left: 10%; animation-delay: 0s;"></div>
-            <div class="particle absolute w-1 h-1 bg-primary rounded-full opacity-40 animate-pulse"
-                style="top: 60%; left: 80%; animation-delay: 1s;"></div>
-            <div class="particle absolute w-3 h-3 bg-accent rounded-full opacity-50 animate-pulse"
-                style="top: 40%; left: 20%; animation-delay: 2s;"></div>
-            <div class="particle absolute w-1 h-1 bg-secondary rounded-full opacity-30 animate-pulse"
-                style="top: 80%; left: 60%; animation-delay: 3s;"></div>
-            <div class="particle absolute w-2 h-2 bg-primary rounded-full opacity-50 animate-pulse"
-                style="top: 30%; left: 90%; animation-delay: 4s;"></div>
+        class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background: var(--gradient-hero); padding-top: 80px;">
+        <!-- Effet lueur indigo -->
+        <div class="absolute inset-0 overflow-hidden" style="pointer-events: none;">
+            <div style="position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(99,102,241,0.15) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(139,92,246,0.1) 0%, transparent 60%);"></div>
         </div>
 
         <div class="container-custom relative z-10">
@@ -95,13 +96,13 @@
                 <!-- Hero Content -->
                 <div class="text-center lg:text-left">
                     <div class="mb-6">
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4">
+                        <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; color: var(--text-primary); line-height: 1.1; margin-bottom: 1.5rem;">
                             Bonjour, je suis <span class="text-gradient">Jules</span>
                         </h1>
-                        <div class="text-xl md:text-2xl text-text-secondary mb-6">
-                            <span id="typewriter" class="border-r-2 border-secondary"></span>
+                        <div class="text-xl md:text-2xl mb-6" style="color: var(--text-secondary);">
+                            <span id="typewriter" style="border-right: 2px solid var(--color-accent);"></span>
                         </div>
-                        <p class="text-lg text-text-secondary max-w-2xl mx-auto lg:mx-0">
+                        <p class="text-lg max-w-2xl mx-auto lg:mx-0" style="color: var(--text-secondary); line-height: 1.7;">
                             Développeur Full-Stack Backend & Data Analyst junior, spécialisé en solutions Agritech et Fintech pour l'Afrique.
                             Je transforme des problèmes réels en produits techniques qui fonctionnent.
                         </p>
@@ -738,6 +739,7 @@
         });
     </script>
     <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+    <script src="../js/theme-indigo.js"></script>
 </body>
 
 </html>
