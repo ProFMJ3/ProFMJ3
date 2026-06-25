@@ -1,0 +1,31 @@
+<!-- PREVIEW: Badge avec icône SVG au lieu d'emoji -->
+
+<!-- AVANT (avec emoji) -->
+<span class="badge-success">✅ Complété</span>
+
+<!-- APRÈS (avec icône SVG) -->
+<span class="badge-success" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(34, 197, 94, 0.15); color: #22C55E; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600;">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+    </svg>
+    Complété
+</span>
+
+<!-- Date avec icône calendrier -->
+<p class="cert-date mb-4" style="color: var(--text-secondary); font-size: 0.875rem; display: flex; align-items: center;">
+    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+    </svg>
+    22 Février 2024
+</p>
+
+<!-- Bouton avec icône document + flèche -->
+<a href="../static/certifs/cert.pdf" target="_blank" class="btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; border: 1px solid var(--color-primary); color: var(--color-primary); padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; text-decoration: none;">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+    </svg>
+    Voir Certificat
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+    </svg>
+</a>
